@@ -1,0 +1,268 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body, html {
+    margin:0;
+    padding:0;
+}
+
+header {
+    background-color: rgb(71, 37, 13);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+header .row {
+    padding: 0;
+}
+
+header nav   {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#burgermenue {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    #burgermenue {
+        color: rgb(rgb(255, 255, 255));
+        display: block;
+        font-size: 30px;
+    }
+    body, html {
+        overflow-x: hidden;
+    }
+
+    header nav {
+        background-color: rgb(129, 69, 27);
+        position: absolute;
+        right: -100%;
+        transition: right 500ms;
+        top: 114px;
+        width: 100%;
+        z-index: 10;
+        justify-content: center;
+        border-radius: 0 0 15px 15px;        
+    }
+
+    header nav.active {
+        right: 0;
+    }
+
+    header ul {
+        flex-direction: column;
+        height: 30%;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+     header .col-6  {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        width: 50%;
+
+    }
+
+    #headerlogo {
+        justify-content: flex-start;
+    }
+
+    #toGo {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }    
+
+    .row {
+        justify-content: center;
+    }
+
+    #mainimage {
+        text-align: center;
+    }
+
+    #copyright {
+
+    }
+
+        
+}
+
+img {
+    width:100%;
+}
+
+#button {
+    background-color: rgb(117, 59, 17);
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 120px;    
+}
+
+#button:hover{
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(161, 99, 4);
+}
+
+a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    margin: 10px 10px;
+}
+
+a:active {
+    color: rgb(161, 99, 4);
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+.col-3 {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.col-4 {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#mainimage {
+    background-image: url(../images/hintergrund.jpg);
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 40vh; 
+    margin-top: 30px;
+}
+
+#mainimage p {
+    font-size: 12px;
+}
+
+p {
+    margin: 10px 0 25px 0;
+}
+
+#topimage {
+    background-image:  url(../images/frontpage.jpg);
+    background-size: cover;
+    display: flex;
+    height: 60vh;
+}
+
+#toGo {
+    align-items: center;
+}
+
+
+#logo {
+    width: auto;
+    margin-top: 5px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: rgb(129, 69, 27);
+}
+
+h2 {
+    text-transform: uppercase;
+    color: rgb(129, 69, 27);
+    margin: 10px 0;
+}
+
+h3 {
+    font-size: 24px;  
+    text-shadow: 3px 3px black;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 32px;
+    font: 800;
+}
+
+#navi ul {
+    display: flex;
+}
+
+#navi ul li {
+    margin: 10px;
+    list-style: none;
+    color: white;
+}
+
+footer {
+    background-color: rgb(71, 37, 13);
+    color: white;
+    height: 100%;
+    padding: 15px
+}
+
+#bottom {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#copyright {
+    float: right;
+}
+
+
+/* Section for "produkte" */
+
+#smalltopimg {
+    background-image:  url(../images/frontpage.jpg);
+    background-size: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome {
+    background-color: rosybrown;
+    margin: 0 20px;
+    padding: 0 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+/* Icons */
+
+.fas {    
+    font-size: 3rem;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .fas {
+        font-size: 6rem;
+        color: rgb(236, 238, 243)
+    }
+}
+
+
+
+
+
